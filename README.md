@@ -1,0 +1,6 @@
+he purpose of this assignment is to familiarize yourself with SIMD (single instruction, multiple data) programming. Most modern processors include some form of vector operations (i.e., SIMD instructions), and some applications may take advantage of SIMD instructions to improve performance through vectorization. Although modern compilers support automatic vectorization optimizations, the capabilities of compilers to fully auto-vectorize a given piece of code are often limited. Fortunately, almost all compilers (targeted to processors with SIMD extensions) provide SIMD intrinsics to allow programmers to vectorize their code explicitly.
+
+1. Vectorizing Code with Automatic Vectorization Optimizations
+Take the exercises below and answer questions Q1, Q2, and Q3.
+
+We are going to start from scratch and try to let the compiler do the brunt of the work. You will notice that this is not a “flip a switch and everything is good” exercise, but it also requires effort from the developer to write the code in a way that the compiler knows it can do these optimizations. The goal of this assignment is to learn how to fully exploit the optimization capabilities of the compiler such that in the future when you write code, you write it in a way that gets you the best performance for the least amount of effort.
